@@ -8,6 +8,7 @@ TextUtils is a simple Python library that provides useful text manipulation func
 - **Character count:** Count the number of characters in a text.
 - **Reverse text:** Reverse the characters in a string.
 - **Capitalize words:** Capitalize the first letter of each word.
+- **Truncate text:** Shorten text to a maximum length, including a configurable suffix.
 
 ## Project structure
 
@@ -16,10 +17,12 @@ textutils/
 ├── textutils/
 │   ├── __init__.py
 │   ├── casing.py
-│   └── transform.py
+│   ├── transform.py
+│   └── truncate.py
 ├── tests/
 │   ├── test_casing.py
-│   └── test_transform.py
+│   ├── test_transform.py
+│   └── test_truncate.py
 ├── .gitignore
 ├── CHANGELOG.md
 ├── LICENSE
@@ -47,6 +50,7 @@ python -m pip install -e .
 ```python
 from textutils.transform import word_count, character_count, reverse
 from textutils.casing import capitalize_words
+from textutils import truncate
 
 text = "hello open source"
 
@@ -54,6 +58,7 @@ print(word_count(text))         # 3
 print(character_count(text))    # 18
 print(reverse(text))            # ecruos nepo olleh
 print(capitalize_words(text))   # Hello Open Source
+print(truncate("Hello World", 8))  # Hello...
 ```
 
 ## Running tests
