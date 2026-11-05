@@ -1,5 +1,4 @@
-
-from textutils.transform import word_count, character_count, reverse
+from textutils.transform import character_count, reverse, word_count
 
 
 def test_word_count():

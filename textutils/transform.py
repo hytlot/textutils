@@ -1,37 +1,61 @@
 def word_count(text: str) -> int:
-    """
-    Count the number of words in a text.
+    """Count the number of words in a text.
 
-    Args:
-        text: The input text.
+    Parameters
+    ----------
+    text : str
+        Input text whose words are counted.
 
-    Returns:
-        The number of words.
+    Returns
+    -------
+    int
+        Number of words in the input text.
+
+    Examples
+    --------
+    >>> word_count("Hello Open Source")
+    3
     """
     return len(text.split())
 
 
 def character_count(text: str) -> int:
-    """
-    Count the number of characters in a text, including spaces.
+    """Count the number of characters in a text, including spaces.
 
-    Args:
-        text: The input text.
+    Parameters
+    ----------
+    text : str
+        Input text whose characters are counted.
 
-    Returns:
-        The number of characters.
+    Returns
+    -------
+    int
+        Number of characters in the input text.
+
+    Examples
+    --------
+    >>> character_count("Hello World")
+    11
     """
     return len(text)
 
 
 def reverse(text: str) -> str:
-    """
-    Reverse the characters of a text.
+    """Reverse the characters of a text.
 
-    Args:
-        text: The input text.
+    Parameters
+    ----------
+    text : str
+        Input text.
 
-    Returns:
-        The reversed text.
+    Returns
+    -------
+    str
+        Text with its characters in reverse order.
+
+    Examples
+    --------
+    >>> reverse("Python")
+    'nohtyP'
     """
     return text[::-1]

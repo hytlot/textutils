@@ -16,9 +16,13 @@ TextUtils is a simple Python library that provides useful text manipulation func
 textutils/
 ├── textutils/
 │   ├── __init__.py
-│   ├── casing.py
 │   ├── transform.py
-│   └── truncate.py
+│   ├── casing/
+│   │   ├── __init__.py
+│   │   └── _capitalize.py
+│   └── truncation/
+│       ├── __init__.py
+│       └── _truncate.py
 ├── tests/
 │   ├── test_casing.py
 │   ├── test_transform.py
@@ -55,24 +59,31 @@ from textutils import truncate
 text = "hello open source"
 
 print(word_count(text))         # 3
-print(character_count(text))    # 18
+print(character_count(text))    # 17
 print(reverse(text))            # ecruos nepo olleh
 print(capitalize_words(text))   # Hello Open Source
 print(truncate("Hello World", 8))  # Hello...
 ```
 
-## Running tests
+## Development
 
-Install pytest:
+Install the project with its development tools:
 
 ```bash
-python -m pip install pytest
+python -m pip install -e ".[dev]"
 ```
 
-Run the tests:
+Run the tests with coverage:
 
 ```bash
-python -m pytest
+python -m pytest --cov --cov-report=term-missing
+```
+
+Check formatting and code quality:
+
+```bash
+python -m black --check .
+python -m ruff check .
 ```
 
 ## License

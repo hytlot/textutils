@@ -1,5 +1,13 @@
-"""textutils - une petite librairie de manipulation de texte"""
+﻿"""textutils - une petite librairie de manipulation de texte"""
 
-from textutils.transform import word_count, character_count, reverse
 from textutils.casing import capitalize_words
-from textutils.truncate import truncate
+from textutils.transform import character_count, reverse, word_count
+from textutils.truncation import truncate
+
+__all__ = [
+    "capitalize_words",
+    "character_count",
+    "reverse",
+    "truncate",
+    "word_count",
+]
