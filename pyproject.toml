@@ -1,14 +1,15 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "textutils"
-version = "0.2.0"
+name = "textutils-hytlot"
+version = "1.0.0"
 description = "A small Python library of text manipulation functions."
 readme = "README.md"
-license = { file = "LICENSE" }
-requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
 dependencies = []
 
 [project.optional-dependencies]

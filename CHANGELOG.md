@@ -1,14 +1,18 @@
 # Changelog
 
-## 0.2.0 (session 3)
+## [1.0.0]
 
-- Ajout de tests supplémentaires et vérification de la couverture avec pytest-cov.
-- Formatage du projet avec Black et vérification avec Ruff.
-- Docstrings au format NumPy pour l'API publique.
-- Organisation en packages (`casing`, `truncation`) avec modules internes préfixés par `_`.
-- Définition de l'API publique via `__init__.py` et `__all__`.
-- Ajout de `pyproject.toml` (métadonnées, dépendances, configuration des outils).
-## 0.1.0 (session 1)
+### Added
+- Packaging with `pyproject.toml` (metadata, dependencies, tool configuration).
+- NumPy-style docstrings for the public API.
+- Public API exposed through `__init__.py` and `__all__`.
+- Continuous integration with GitHub Actions and pre-commit hooks.
+
+### Changed
+- Project organised into packages (`casing`, `truncation`) with internal `_` modules.
+- Code formatted with Black and checked with Ruff.
+
+## [0.1.0]
 
 - Ajout de `word_count` pour compter les mots.
 - Ajout de `character_count` pour compter les caractères.
